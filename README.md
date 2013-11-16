@@ -69,3 +69,7 @@ With the first line having no content rendered, but include a newline, we have t
 ## License
 
 `django-include-strip-tag` is published under the MIT License (see the LICENSE file)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/twidi/django-include-strip-tag/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
