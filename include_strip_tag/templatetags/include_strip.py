@@ -2,8 +2,6 @@ from django.template.loader_tags import do_include, IncludeNode
 from django import template
 register = template.Library()
 
-from django.template.loader_tags import do_include, ConstantIncludeNode, IncludeNode
-
 class StripIncludeNode(IncludeNode):
     def render(self, context):
         return super(StripIncludeNode, self).render(context).strip()
