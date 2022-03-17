@@ -30,7 +30,7 @@ Simply add the tags library in your template, and use `include_strip` instead of
 
 ```django
 {% load include_strip %}
-Hello {% include_strip "user.html %}, how are you today ?
+Hello {% include_strip "user.html" %}, how are you today ?
 ```
 
 ## Why ?
@@ -53,7 +53,7 @@ With `include_strip`, we have:
 Hello SomeUSerName, how are you today ?
 ```
 
-Notice the difference between the username and the coma... It's because the newline at the end of the included template is kept when the result is added to the parent template.
+Notice the difference between the username and the comma... It's because the newline at the end of the included template is kept when the result is added to the parent template.
 
 So the `include_strip` apply the `strip` method (on the result, which is a string) to remove it.
 
