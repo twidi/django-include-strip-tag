@@ -1,12 +1,8 @@
-from django.template.loader_tags import do_include, ConstantIncludeNode, IncludeNode
+from django.template.loader_tags import do_include, IncludeNode
 from django import template
 register = template.Library()
 
 from django.template.loader_tags import do_include, ConstantIncludeNode, IncludeNode
-
-class StripConstantIncludeNode(ConstantIncludeNode):
-    def render(self, context):
-        return super(StripConstantIncludeNode, self).render(context).strip()
 
 class StripIncludeNode(IncludeNode):
     def render(self, context):
